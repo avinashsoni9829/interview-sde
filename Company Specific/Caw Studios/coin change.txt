@@ -1,0 +1,19 @@
+int coinchange(int s[] , int m , int n){
+   int dp[n + 1];
+   memset(dp, 0, sizeof(dp));
+   
+   dp[0] = 1;
+   
+   for(int i = 0 ; i < m ; ++i){
+       for(int c=s[i] ; s<=n ; ++s){
+       dp[c] = dp[c] + dp[c-s[i]];
+
+       }
+
+   }
+
+   return dp[n];
+
+
+
+}

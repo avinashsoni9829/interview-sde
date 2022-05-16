@@ -1,0 +1,40 @@
+ int method3(vector<int>a,int n)
+ {
+ 	 
+        
+        if(n==0) return 0;
+        
+        
+        int overall_max = 1 ;
+        int curr_max = 1;
+        
+        sort(a.begin(),a.end());
+        
+        for(int i = 1 ; i < n; ++i)
+        {
+            if(a[i]==a[i-1])
+            {
+                continue;
+                
+            }
+           
+            if(a[i] == a[i-1] + 1)
+            {
+               curr_max = curr_max + 1;  
+            }
+            else
+            {
+              overall_max = max(overall_max , curr_max);
+              curr_max = 1;
+            }
+             
+        }
+        
+        overall_max = max(overall_max , curr_max);
+        
+        return overall_max;
+        
+ 	 
+ 	 
+ 	 
+ }

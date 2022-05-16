@@ -1,4 +1,4 @@
-/*  Middle of a Linked List  */
+ /*  Middle of a Linked List  */
 
 1 .  count nodes and return the corresponding node 
 

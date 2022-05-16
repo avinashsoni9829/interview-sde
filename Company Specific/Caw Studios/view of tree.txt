@@ -1,0 +1,49 @@
+left view : 
+
+void helper(node * root,vector<int>&ans , int level , int & mx){
+      if(root == null) return;
+      if(level > mx){
+         ans.pb(root -> data);
+         mx = level;
+      }
+       left  call;
+       right call;
+
+}
+
+
+
+vector<int>left(node * root){
+   vector<int>ans;
+   int mx = 0;
+   helper(root , ans , 1 ,&mx);
+   return ans;
+
+}
+
+
+  bottom view 
+
+vector<int> bottomview(node * root){
+     vector<int>ans;
+     map<int,int>mp;
+    
+     queue<pair<node*,int>>q;
+     q.push({root , 0});
+     
+     while(!q.empty()){
+      node * curr = q.front().first;
+      int h = q.front().second;
+
+      q.pop();
+      // in top  !mp[h] = curr -> data      
+      mp[h] = curr -> data;
+      left  push-- ( h - 1)
+      right push-- ( h + 1) 
+
+     }
+            
+
+
+}
+

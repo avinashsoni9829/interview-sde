@@ -3,7 +3,7 @@ a Maze problem using backtracking */
 #include <stdio.h>
 
 // Maze size
-#define N 4
+#define N 5
 
 bool solveMazeUtil(
 	int maze[N][N], int x,
@@ -97,22 +97,6 @@ bool solveMazeUtil(
 			== true)
 			return true;
 	
-		/* If moving in y direction
-		doesn't give solution then
-		Move back in x direction */
-		if (solveMazeUtil(
-				maze, x - 1, y, sol)
-			== true)
-			return true;
-
-		/* If moving backwards in x direction
-		doesn't give solution then
-		Move upwards in y direction */
-		if (solveMazeUtil(
-				maze, x, y - 1, sol)
-			== true)
-			return true;
-
 		/* If none of the above movements
 		work then BACKTRACK: unmark
 		x, y as part of solution path */
@@ -126,10 +110,11 @@ bool solveMazeUtil(
 // driver program to test above function
 int main()
 {
-	int maze[N][N] = { { 1, 0, 0, 0 },
-					{ 1, 1, 0, 1 },
-					{ 0, 1, 0, 0 },
-					{ 1, 1, 1, 1 } };
+	int maze[N][N] = { { 1, 0, 0, 0 , 0},
+					{ 1, 1, 0, 1 , 0 },
+					{ 0, 1,  1 , 1, 0 },
+					{ 0 , 0 , 0 , 1 , 0 },
+					  { 1 , 1, 1 , 1, 1 } };
 
 	solveMaze(maze);
 	return 0;

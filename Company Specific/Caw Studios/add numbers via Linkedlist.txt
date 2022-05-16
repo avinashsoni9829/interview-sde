@@ -1,0 +1,25 @@
+node * add(node * l1 , node * l2)
+{  
+
+   node * ans = new node();
+   node * curr = ans ;
+   
+   int carry = 0;
+   
+   while(l1!=null or l2!=null or carry)
+  {
+      int sum = 0 ;
+      if(l1!=null) sum = sum + l1 -> val, l1 = l1 -> next ;
+      if(l2!=null) sum = sum + l2 -> val , l2 = l2 -> next;
+
+       sum =sum + carry ;
+
+       node * nd = new node(sum % 10);
+       carry = sum / 10;
+       curr-> next = nd;
+       curr = nd;
+  
+  }
+  return ans -> next; 
+
+}

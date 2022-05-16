@@ -4,7 +4,6 @@
 
 
 /*  Method 1   time : O(n + m)  space : O(n  + m)  */
-
     ListNode *mergeTwoLists(ListNode *l1, ListNode *l2) {
     
     if(NULL == l1) return l2;
@@ -47,7 +46,7 @@
         {
              ListNode * curr = NULL;
              
-            while(l1!=NULL and l1->val <=l2->val)
+            while(l1!=NULL and l1->val <=l2-nval)
             {
                 curr  = l1;
                 l1 = l1->next;

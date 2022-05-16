@@ -1,0 +1,26 @@
+node * intresection(node * l1 , node * l2){
+    int n = len (l1);
+    int m = len(l2);
+    
+    node * a = l1;
+    node * b = l2;
+    
+    if(n > m){
+         int d = n - m ;
+         while(d--) a = a-> next;
+   }
+   else
+   {
+       int d = m - n ;
+       while(d--) b = b -> next;
+    } 
+
+   while(a!=null or b!=null){
+          if(a == b) return a ;
+          a = a -> next;
+          b = b -> next;
+   }
+
+   return null;
+  
+}

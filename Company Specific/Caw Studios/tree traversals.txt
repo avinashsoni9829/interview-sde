@@ -1,0 +1,90 @@
+Iterative Inorder Traversal : 
+
+
+vector<int>inorder(node * root){
+  vector<int>ans;
+  stack<node*>st;
+  if(root == null) return ans;
+  
+  node * curr = root;
+
+  while(curr!=NULL or !st.empty()){
+         // move total left 
+        while(curr!=NULL){
+             st.push(curr);
+             curr = curr -> left;
+         }
+          // Root  
+          curr = st.top();
+          st.pop();
+          ans.push(curr -> val);
+          curr = curr -> right;
+          }
+          return ans;
+}
+
+
+
+
+
+
+Iterative Preorder Traversal :
+ 
+vector<int> preorder(node  * root){
+   vector<int>ans;
+    stack<node*>st;
+    if(root == null) return ans;
+
+   st.push(root);
+   
+   while(!st.empty()){
+    //root
+      node * curr = s.top();
+      s.pop();
+      ans.push_back(curr -> val);
+      
+     if(curr -> right) st.push(curr -> right);
+     if(curr -> left) st.push(curr -> left);
+ 
+
+
+  }
+   return ans;
+
+  
+  }
+
+
+
+Iterative PostOrder Traversal :
+
+vector<int> postorder(node * root){
+   vector<int>res;
+   if(root == null) return res;
+   stack<node*>curr,ans;
+
+   curr.push(root);
+
+   while(!curr.empty()){
+      node * t = curr.top();
+      curr.pop();
+      ans.push(t);
+ 
+      if(t -> left) curr.push(t->left);
+      if(t -> right) curr.push(t->right);
+     }
+
+     while(!ans.empty()){
+      node * t = ans.top();
+      ans.pop();
+      res.push_back(t -> val);
+
+    }
+
+    return res;
+
+
+}
+
+
+ 

@@ -1,0 +1,41 @@
+node * merge(node * l1 , node * l2){
+  node * temp = new node(0);
+  node * res = temp;
+
+  while(a!=null and b!=null){
+    if(a->data < b->data){
+       temp -> bottom = a;
+       temp = temp -> bottom;
+       a = a -> bottom;
+   }
+   else
+   {
+      temp -> bottom =  b;
+      temp = temp -> bottom;
+      b = b -> bottom;
+      
+  }
+
+ 
+  }
+
+  if(a)  temp -> bottom = a;
+  if(b)  temp -> bottom = b;
+  return res -> bottom;
+ }
+
+
+node * flat(node * root){
+   if(root == NULL or root-> next == NULL){
+
+    return root;
+  }
+   
+  root -> next = flat(root -> next);
+
+ root = merge(root , root -> next);
+
+ return root;
+
+
+}

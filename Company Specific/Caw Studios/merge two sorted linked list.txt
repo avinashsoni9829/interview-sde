@@ -1,0 +1,24 @@
+node * merge(node * l1 , node * l2){
+    
+    if(l1  == null) return l2;
+    if(l2 == null)  return l1 ;
+
+    if(l1 -> val  > l2 -> val) swap(l1,l2);
+    
+    node * ans = l1;
+    
+    while(l1!=null and l2!=null){
+      
+       node * curr = null;
+      
+       while(l1!=null and l1 -> val <= l2 -> val)
+       {
+           curr = l1;
+           l1 = l1 -> next;
+       }
+
+       curr -> next = l2 ;
+       swap(l1 , l2);
+    }
+    return ans;
+}

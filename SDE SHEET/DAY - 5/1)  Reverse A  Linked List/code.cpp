@@ -2,7 +2,10 @@
 
 1 . Reverse A  linked List Using Iterative Method  : Time : O(n)  + Space : O(1);
     
-    
+    /*
+       time : O(n)
+       space : O(1)
+    */
     Node * reverseIter(Node * head)
     {
     	  Node * root = NULL;
@@ -18,10 +21,15 @@
 	}
 
 2. Recursive Programme To reverse a Linked List :  Time O(n) + Space O(1)
-
+    /*
+        time : O(n)
+        space : O(1)
+        
+    
+    */ 
    Node *  reverseRec(Node * head)
    { 
-      if(head == NULL || head->next == )
+      if(head == NULL || head->next == NULL )
       Node  * rest = reverseRec(head->next);
       head->next->next = head;
       head->next = NULL;

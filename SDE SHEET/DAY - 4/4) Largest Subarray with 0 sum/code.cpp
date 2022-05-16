@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
-/*  longest Subarray with sum  0 */
+
+/* 
+
+   longest Subarray with sum  0
+
+*/
 
 int method(vector<int>A,int n)
 {

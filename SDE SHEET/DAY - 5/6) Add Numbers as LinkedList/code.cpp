@@ -17,15 +17,14 @@ space  : O(1)
             
             if(l1!=NULL)
             {
-               sum = sum + l1->val;
-                l1 = l1 -> next;
+                sum = sum + l1->val;
+                l1  = l1 -> next;
             }
             
             if(l2!=NULL)
             {
                sum = sum  + l2->val;
-                l2 = l2 -> next;
-                
+                l2 = l2 -> next;   
             }
             
             sum = sum + carry ;

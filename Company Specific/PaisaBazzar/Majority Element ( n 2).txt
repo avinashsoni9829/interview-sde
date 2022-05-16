@@ -1,0 +1,24 @@
+int majorityElement(vector<int>&a){
+    int ans = 0 ;
+    int curr = 0 ;
+    int n = a.size();
+    
+    for(int i = 0 ; i < n ; ++i){
+         if(curr == 0){
+            ans  = a[i];
+         }
+         if(a[i] == ans){
+           curr = curr + 1;
+         }
+         else
+         {
+            curr = curr - 1;
+         }
+    
+    }
+
+    return ans;
+
+
+
+}

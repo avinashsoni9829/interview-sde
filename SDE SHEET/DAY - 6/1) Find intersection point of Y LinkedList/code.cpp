@@ -5,7 +5,7 @@ Intersection of Two Linked Lists
     class Solution {
     public:
     
-    
+     
 	int len  (ListNode * ll)
     {
          int ans = 0;
@@ -23,7 +23,7 @@ Intersection of Two Linked Lists
        
      int n = len(headA);
      int m = len(headB);
-            ListNode *  currA = headA;
+         ListNode *  currA = headA;
          for(int i = 0 ; i < n ; ++i)
           {
              
@@ -162,7 +162,8 @@ public:
 
     class Solution {
     public:
-    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) 
+	{
        
 	   if(headA == NULL or headB == NULL) return NULL;
         
@@ -171,11 +172,11 @@ public:
         
         while(A!=B)
         {
-           A =  A == NULL ? headB : A -> next;
-           B =  B == NULL ? headA : B -> next;
+           A =  ( A == NULL ) ? headB : A -> next;
+           B =  ( B == NULL ) ? headA : B -> next;
         }
         
-        return A;
+        return A;	
      
     }
 };

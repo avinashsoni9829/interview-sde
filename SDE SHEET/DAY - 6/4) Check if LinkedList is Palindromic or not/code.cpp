@@ -17,6 +17,7 @@ public:
             slow=slow->next;
             fast=fast->next->next;
         }
+        
         slow->next=reverseList(slow->next);
         slow=slow->next;
         while(slow!=NULL){
@@ -38,4 +39,4 @@ public:
         }
         return pre;
     }
-};
+};	

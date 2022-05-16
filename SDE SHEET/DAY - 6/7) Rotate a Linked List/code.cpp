@@ -1,10 +1,11 @@
-Rotate A linked List 
+	Rotate A linked List 
 
 
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
         // handle special case length is 0 or 1
+        
         if (head == nullptr || head->next == nullptr) return head;
 
         // calculate list length
@@ -23,7 +24,7 @@ public:
         
 		//split the list to two lists.
         ListNode* newHead = head;
-        ListNode* newTail = head;; 
+        ListNode* newTail = head;
         while (length > k)
         {
             newTail = newHead;

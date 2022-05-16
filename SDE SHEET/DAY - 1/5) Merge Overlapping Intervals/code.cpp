@@ -118,7 +118,7 @@ void merge(interval a[],int n)
 			 
 			  
 			*/
-		   //not overalling condition
+		   //not overalaping condition
 		   
 		  if(check.end < a[i].start)
 		  {  

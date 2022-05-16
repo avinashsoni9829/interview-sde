@@ -1,0 +1,34 @@
+Dependencies : 
+
+
+1)   Body Parser : 
+   *  Available under req.body 
+   *  Middleware
+   
+2) Cookie - Parser : 
+   * populate req.cookie with object having key as cookie name 
+   CookieParser(Secret , options);
+
+3) CORS : Cross Origin Resource Sharing 
+   * it allows you to make requests from one website to another 
+     which is normally prohibited by browser policy called as SOP (  Same - Origin - Policy ) 
+
+4) Dotenv : 
+   require('dotenv').config()
+   Add Environment variable 
+
+5) Crypto : Used for generating encrypted passwords 
+
+6) formidable : 
+ * parsing form data  , file  uploads 
+ * Node . js module 
+
+7) Lodash 
+  *  Javascript  Library  for working with Arrays , numbers , objects , string 
+  * operations on Arrays  ,  functions
+  
+  8) Morgan :  HTTP request logger middleware for node.js
+
+9) UUID : 
+import { v4 as uuidv4 } from 'uuid';
+uuidv4(); 

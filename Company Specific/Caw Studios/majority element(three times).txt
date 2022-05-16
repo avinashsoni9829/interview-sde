@@ -1,0 +1,67 @@
+void method3(vector<int>a,int n)
+{
+	   set<int>ans;
+	   
+	   
+	   int num1=-1,num2=-1,cnt1=0,cnt2=0;
+	   
+	   for(int i = 0; i < n ; i++ )
+	   {
+	   	   if(a[i] == num1)
+	   	   {  
+		       cnt1 ++;
+		   }
+		   else
+		   if(a[i] == num2)
+		   {
+		   	   cnt2 ++;
+		   	   
+		   }
+		   else
+		   if(cnt1 == 0)
+		   {
+		   	  num1 = a[i];
+		   	  cnt1 ++;
+		   }
+		   else
+		   if(cnt2 == 0)
+		   {
+		   	  num2 = a[i];
+		   	  cnt2++;
+		   }
+		   else
+		   {
+		   	  cnt1 -- ;
+		   	  cnt2 -- ;
+		   }
+	   }
+	   
+	   cnt1 = 0;
+	   cnt2 = 0;
+	   
+	   for( int  i = 0 ; i < n ; i++)
+	   {
+	   	   cnt1 = cnt1 + (a[i] == num1);
+	   	   cnt2 = cnt2 + (a[i] == num2);
+	   }
+	   
+	   if(cnt1 > n / 3)
+	   {
+	   	  ans.insert( cnt1 );
+	   	  
+	   }
+	   
+	   if(cnt2 > n / 3)
+	   {
+	   	 ans.insert( cnt2 );
+	   }
+	   
+	   
+	   for(auto z: ans)
+	   {
+	   	  cout<<z<<" ";
+	   }
+	   
+	   cout<<endl;
+	   
+}

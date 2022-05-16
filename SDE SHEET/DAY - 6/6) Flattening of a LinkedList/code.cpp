@@ -6,7 +6,7 @@ Node* mergeTwoLists(Node* a, Node* b) {
     Node *temp = new Node(0);
     Node *res = temp; 
     
-    while(a != NULL && b != NULL) {
+    while(a!= NULL && b!= NULL) {
         if(a->data < b->data) {
             temp->bottom = a; 
             temp = temp->bottom; 

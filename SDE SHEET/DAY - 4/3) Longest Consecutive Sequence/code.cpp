@@ -3,22 +3,22 @@ using namespace std;
 //  longest consecutive sequence
 
 /*
-  flow of ans : 
+       flow of ans : 
   
        1)  brute force with sorting 
        2)  using set
        3)  using differnce of two values at a time
-       
- 
+
+
 */
 
 
 /* --------------------- Method 1 -----------------------  */
 
 /*
-  
-   time  : O( n * n )
-   space : O(1)
+   
+    time  : O( n * n )
+    space : O(1)
 
 */
 
@@ -32,7 +32,7 @@ using namespace std;
          int idx = i ;
          int len=0;
          int curr = a[idx] - 1;
-         while(a[idx]== curr+1)
+         while(a[idx] == curr+1)
          {
          	  idx+=1;
          	  curr+=1;

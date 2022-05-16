@@ -47,10 +47,10 @@ int res=0;
 		vector<int> vec1(n);
         vector<int> vec2(m);
         
-		for(int i=0;i<n;i++)
+		    for(int i=0;i<n;i++)
+            vec1[i] = nums[left+i];
         
-		    vec1[i] = nums[left+i];
-        for(int i=0;i<m;i++)
+		    for(int i=0;i<m;i++)
             vec2[i] = nums[mid+1+i];
         
 		int i=0;

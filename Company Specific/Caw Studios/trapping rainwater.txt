@@ -1,0 +1,29 @@
+class Solution {
+public:
+    int trap(vector<int>& height) {
+         
+        int n = height.size();
+        
+        int ans = 0;
+        
+        int lmax = 0 , rmax = 0 ;
+        int low = 0 , high = n - 1;
+        
+        while(low <= high){
+              if(height[low] <= height[high]){
+                   lmax = max(lmax , height[low]);
+                   ans = ans + lmax - height[low];
+                   low = low + 1;
+              }
+              else
+              {
+                   rmax = max(rmax , height[high]);
+                   ans = ans + rmax - height[high];
+                   high = high - 1;
+              }
+        }
+        
+        return ans;
+        
+    }
+};

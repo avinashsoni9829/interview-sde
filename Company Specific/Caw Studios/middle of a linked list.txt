@@ -1,0 +1,14 @@
+Node * middle(Node * root){
+    Node * slow = root;
+    Node * fast = root ;
+
+    while(fast!=NULL and fast -> next!=NULL){
+     
+     fast = fast -> next -> next ;
+     slow = slow -> next ;   
+
+   }
+   
+   return slow ;
+ }
+

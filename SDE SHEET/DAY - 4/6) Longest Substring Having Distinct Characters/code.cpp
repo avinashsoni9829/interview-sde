@@ -82,10 +82,10 @@ int method2(string s,int n)
    
     int res = 0; // result
  
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++){
          
         // Note : Default values in visited are false
-        vector<bool> visited(256);  
+        vector<bool>visited(256);  
  
         for (int j = i; j < n; j++) {
  
@@ -137,6 +137,66 @@ int method2(string s,int n)
 	
 		
  }   
+ 
+ 
+ int method4(string s, int n ){
+ 	  map<char,int>mp;
+ 	  
+ 	  int i = -1; 
+ 	  int j = -1;
+ 	  int ans = 0 ;
+ 	  
+ 	  while(true){
+ 	  
+	      bool flag1 = false;
+		  bool flag2 = false;
+		  
+		  while(i<n-1){
+		  	  flag1 = true;
+		  	
+		  	i = i + 1;
+		  	
+		  	mp[s[i]]++;
+		  	
+		  	if(mp[s[i]] == 2)
+			  {
+		  		 break;
+			  }
+		 	  else
+			  {
+		 	  	 ans = max(ans, i - j );
+		 	  }
+		  }
+		  
+		  while(j<i)
+		  {
+		  	 flag2 = true;
+			  	 
+			  	 j = j + 1;
+			  	 
+			  	 mp[s[j]]--;
+			  	 
+			  	 if(mp[s[j]] == 1){
+			  	 	  break;
+				   }
+		  }
+		  
+		  if(flag1 == false and flag2 == false)
+		  {
+		  	 break;
+		  }
+		  
+		  
+		  	 
+	   }
+	   
+	   
+	   return ans;
+	   
+	   
+	   
+ 	  
+ }
 
 
 
@@ -149,7 +209,8 @@ int main()
   string s;
   cin>>s;
   
-  cout<<method1(string s,int n)<<endl; 
+  cout<<method4(s,n)<<endl;
+  
   
 }
 

@@ -54,7 +54,7 @@ using namespace std;
  	       	     if(a[j]>a[j+1]){
  	       	     	
  	       	     
- 	       	     	swap(a[j],a[j+1]);
+ 	       	     	     swap(a[j],a[j+1]);
  	       	     		 swapped=true;
 					
 					}
@@ -123,19 +123,17 @@ using namespace std;
  
  void method3mergesort(vector<int>&a,int low,int high){
  	  
- 
-	  
-	  if(low<high){
+	  if(low<high)
+	  {
 	  	
-	  	int mid=(low+high)/2;
+		int mid=(low+high)/2;
 	  	
-	  	method3mergesort(a,low,mid);
+		method3mergesort(a,low,mid);
 	  	method3mergesort(a,mid+1,high);
 	  	helper(a,low,mid,high);
-	  }   
- 	
- 	
- }
+	  
+	  }
+}
  
  /*    ---------------------------  Variable Count Method  ---------------------------- */
  
@@ -147,7 +145,8 @@ using namespace std;
  	  
  	  // first count0 numbers as 0 then so on for others   O(n) and O(1) space
  	  
- 	  for(int i=0;i<n;++i){
+ 	  for(int i=0;i<n;++i)
+	   {
  	  	count0+=(a[i]==0);
  	  	count1+=(a[i]==1);
  	  	count2+=(a[i]==2);
@@ -155,23 +154,23 @@ using namespace std;
 	   
 	   int curr=0;
 	   
-	   while(count0--){
+	   while(count0--)
+	   {
 	   	a[curr]=0;
 	   	curr++;
 	   }
-	   while(count1--){
+	   while(count1--)
+	   {
 	   	a[curr]=1;
 	   	curr++;
 	   }
 	   
-	   while(count2--){
+	   while(count2--)
+	   {
 	   	a[curr]=2;
 	   	curr++;
 	   }
-	   
-	   
-	   
- 	  
+	
  }
  
  /*    ---------------------------  DUTCH FLAG ALGO  ---------------------------- */
@@ -179,8 +178,9 @@ using namespace std;
  void dutchflagalgo(vector<int>&a,int n){
  	
  	   /* 
- 	   
- 	      Algo : 
+ 	        
+			 
+			   Algo : 
  	      
  	        take three pointers low , curr , high
  	        

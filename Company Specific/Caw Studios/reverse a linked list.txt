@@ -1,0 +1,14 @@
+Node * reverseAList(Node * head)
+   {
+      Node * curr = null;
+      
+      while(head!=NULL)
+       {
+         Node * next = head -> next;
+         head -> next = curr ;
+         curr = head;
+         head = next; 
+       }
+        return root;
+    
+    }

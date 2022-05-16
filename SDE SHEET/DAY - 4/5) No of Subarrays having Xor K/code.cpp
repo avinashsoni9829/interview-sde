@@ -1,4 +1,4 @@
-#include<bits/stdc++.h>
+q#include<bits/stdc++.h>
 using namespace std;
 /* count number of subarray having the xorr value k  */
 
@@ -33,6 +33,7 @@ using namespace std;
 			 
 			  	   	  
 		  }
+		  
 	   }
 	   
 	   return ans;

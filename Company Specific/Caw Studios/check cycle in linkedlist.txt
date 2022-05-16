@@ -1,0 +1,19 @@
+bool cycledetect(node * head){
+    if(head == null or head -> next == null)  return false;
+    node * slow = head;
+    node * fast = head -> next;
+
+    while(slow!=fast){
+      if(fast == null or fast->next == null){
+        return false;
+      }
+      slow = slow -> next;
+      fast = fast -> next -> next ;
+
+
+    }
+ 
+    return true; 
+
+
+}

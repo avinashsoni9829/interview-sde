@@ -68,11 +68,11 @@
             
         }
         
-           slow -> next = slow ->next ->next ;
+        slow -> next = slow ->next ->next ;
         
         return ans->next;
         
         
         
     }
-
+  

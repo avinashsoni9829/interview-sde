@@ -1,6 +1,11 @@
 // for brute use set and put set values in front and return the set size 
 
+/*  
 
+ time :  O(n)
+ space : O(1)
+
+*/
 
 class Solution {
 public:

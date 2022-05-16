@@ -1,0 +1,39 @@
+class Solution {
+public:
+    vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        
+        int n = intervals.size();
+        
+        sort(intervals.begin() , intervals.end());
+        
+        int curr = 0 ;
+        
+        for(int i = 1 ; i < n ; ++i)
+        {
+             int start_first = intervals[curr][0];
+             int end_first = intervals[curr][1];
+            
+             int start_second = intervals[i][0];
+             int end_second = intervals[i][1];
+            
+              
+             
+             if(start_second <= end_first){
+                  intervals[curr][0] = min(intervals[curr][0] , intervals[i][0]);
+                  intervals[curr][1] = max(intervals[curr][1],intervals[i][1]);
+             }
+            else
+            {
+                 curr  = curr + 1;
+                 intervals[curr] = intervals[i];
+            }
+        
+        }
+        
+        intervals.resize(curr + 1);
+        
+        return intervals;
+        
+        
+    }
+};
