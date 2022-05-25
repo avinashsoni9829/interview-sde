@@ -1,0 +1,12 @@
+call() : invokes a method by specifying
+the owner object
+
+apply() : call  -> single arguments
+          apply -> array 
+
+bind()  : 
+return a new function , 
+where value of this keyword will be 
+bound to the owner object 
+which is provided as a parameter
+ 

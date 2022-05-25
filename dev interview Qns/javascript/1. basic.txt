@@ -1,0 +1,46 @@
+everything in js happens in execution context 
+
+
+the execution context has two main parts : 
+
+1.memory block (variable environment)
+2.code block(thread of execution)
+
+javascript is a 
+- synchronous  []
+- single threaded language [ can execute one command at a time  ]
+
+
+phase 1 : Memeory creation phase [  for variable => stores undefined 
+                                    for function => stores the whole function itself in it 
+]
+
+after memory allocation 
+
+phase 2 : code execution 
+          for  fucntion calls again a memeory context is created 
+
+
+code : 
+
+var n  = 2;
+
+function square(num){
+     var ans = num * num; 
+     return ans;
+}
+
+var square2 = square(n);
+var square4 = square(4);
+
+
+
+
+Call stack : we have GEC at the bottom of the stack  , on top of it the execution context related to the code are added 
+            it maintains the order of execution of exectuion context 
+
+hoisting   : it allows us to call functions before even writting them in our code
+In JavaScript, Hoisting is the default behavior of moving all the declarations at 
+the top of the scope before code execution. Basically, it gives us an advantage that 
+no matter where functions and variables are declared, they are moved to the top of their 
+scope regardless of whether their scope is global or local.

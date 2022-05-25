@@ -1,0 +1,6 @@
+1) Inline Styling
+2) JavaScript Object 
+3) CSS StyleSheet 
+4) CSS Modules 
+ 
+

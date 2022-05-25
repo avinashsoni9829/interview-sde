@@ -1,0 +1,4 @@
+1. Initialization 
+2. Mounting
+3. Updating 
+4. Unmounting 

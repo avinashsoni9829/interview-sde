@@ -1,0 +1,15 @@
+functions that operate on other functions
+- take as argument
+- return them
+
+
+function  higherOrder(fn){
+  fn();
+}
+higherOrder
+(
+function()
+{ 
+ console.log("Hello World!")
+}
+);

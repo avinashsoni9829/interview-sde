@@ -1,0 +1,14 @@
+-ability of a function to remember
+the variables and functions that
+are declared in its outer scope
+-allow functions to have private 
+ variables 
+- have access to the parent scope
+  even after the parent functions
+  has closed 
+-  In JavaScript, closures are created 
+   every time a function is created, 
+   at function creation time.
+
+
+

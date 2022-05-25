@@ -1,0 +1,10 @@
+this keyword is used to handle props 
+in class component
+where as
+in functional component it is handled
+directly 
+
+
+
+functional components use react hooks
+to handle state 

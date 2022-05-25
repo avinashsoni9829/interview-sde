@@ -1,0 +1,20 @@
+- Promises are used to handle 
+asynchronous operations in javascript.
+
+-Before promises, callbacks were 
+ used to handle asynchronous 
+ operations. But due to limited 
+ functionality of callback, 
+ using multiple callbacks to 
+ handle asynchronous 
+ code can lead to unmanageable code.
+
+- A promise is created using the 
+Promise constructor which takes
+ in a callback function with two 
+parameters, resolve and reject 
+respectively.
+
+- We can consume any promise by 
+  attaching then() and catch() methods 
+  to the consumer.

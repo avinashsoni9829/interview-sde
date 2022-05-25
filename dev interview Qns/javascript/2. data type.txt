@@ -1,0 +1,11 @@
+primitive  : 
+String
+Number 
+BigInt
+Undefined
+Boolean 
+Null 
+
+Non-Primitive  : Object 
+
+ 

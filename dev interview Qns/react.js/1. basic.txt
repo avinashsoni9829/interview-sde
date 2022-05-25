@@ -1,0 +1,17 @@
+open source js library 
+used for single page applications 
+server side rendering  
+uses virtual dom
+resusablity 
+
+
+advantages : 
+
+use of virtual dom helps to render
+ui faster 
+
+SEO friendly 
+reusable 
+huge ecosystem 
+
+

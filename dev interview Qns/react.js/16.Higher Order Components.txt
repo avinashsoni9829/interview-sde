@@ -1,0 +1,6 @@
+a function that takes a component
+and return a new component 
+
+it is used to do abstraction that helps 
+to define the logic in a single place
+and share across components

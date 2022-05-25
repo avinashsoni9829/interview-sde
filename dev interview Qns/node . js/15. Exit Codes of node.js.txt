@@ -1,0 +1,6 @@
+uncaught ( code - 1) 
+unused (code - 2)
+fatal error ( code - 5) 
+Run time failure (code - 7 )
+internal js eval failure(code - 4)
+

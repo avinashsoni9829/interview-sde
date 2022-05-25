@@ -1,0 +1,4 @@
+Scopes :
+1.Global
+2.Local 
+3.Block

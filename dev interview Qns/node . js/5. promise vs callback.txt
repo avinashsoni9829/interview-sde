@@ -1,0 +1,35 @@
+Call back() : a function passed as an argument to another function  
+used to complete some task 
+
+
+promise: 
+
+promise -> object -> event completion / failure of async operation and its resulting value
+
+basically in a promise we attach callbacks , instead of passing callbacks to a function
+
+
+three state 
+1.  pending 
+2.  fulfilled
+3.  rejected 
+
+
+difference : 
+
+callback get passed to a function 
+promise attaches callback 
+callback may or may not be asynchronous
+promise is asynchronous 
+
+advantage for using promise : 
+
+1. control flow of async logic 
+2. low coupling
+3. error handling 
+4. improved readablity and code - quality 
+
+ 
+
+
+

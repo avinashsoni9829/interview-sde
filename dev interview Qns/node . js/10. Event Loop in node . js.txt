@@ -1,0 +1,3 @@
+event emiiter -> event -> event loop -> event handler 
+
+                              

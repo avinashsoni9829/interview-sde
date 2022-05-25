@@ -5,9 +5,9 @@ space  : O(1)
 --------------------------------------------------------------------------------------------
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         
-        ListNode  *  ans = new  ListNode ();
+        ListNode  *  ans  = new  ListNode ();
         
-        ListNode  * curr = ans;
+        ListNode  *  curr = ans;
         
         int carry = 0;
         

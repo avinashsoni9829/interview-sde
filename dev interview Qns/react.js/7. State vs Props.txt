@@ -1,0 +1,11 @@
+Props : 
+1)  immutable
+2) better performance 
+3) can be passed 
+
+State : 
+1)  Owned by the component 
+2) local scope 
+3) mutable 
+4) can be async
+5) can only be passed as props 

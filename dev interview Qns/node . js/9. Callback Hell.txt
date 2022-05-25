@@ -1,0 +1,10 @@
+nested callbacks 
+each callback take argument which is the
+result of previous callback
+
+make code difficult to read and maintain 
+
+if there is error in one function then all other get problems 
+
+how to solve ? 
+ -  using event queue and promises

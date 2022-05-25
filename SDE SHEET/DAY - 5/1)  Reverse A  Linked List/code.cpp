@@ -16,6 +16,7 @@
           	  head->next = root;
           	  root = head;
           	  head = next;
+          	  head = next;
 		  }
 		  return root;
 	}

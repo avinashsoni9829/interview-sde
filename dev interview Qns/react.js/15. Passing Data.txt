@@ -1,0 +1,11 @@
+Parent -> Child using Props 
+
+child -> parent using Callbacks 
+Steps : 
+1) create callback in parent component
+  that takes data req as parameter 
+2) pass this callback as a prop to the
+child component
+3) send data from child using this
+   callback
+

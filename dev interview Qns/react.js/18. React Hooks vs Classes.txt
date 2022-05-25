@@ -1,0 +1,15 @@
+react hooks : 
+
+1. used in functional component
+2. no constructor required 
+3. no use of this keyword 
+4. easy to use 
+5. helpful for redux and context API
+ 
+classes : 
+1. Class based Component 
+2. constructor is required 
+3. this keyword is used 
+4. difficult to use 
+5. not flexible for state management
+

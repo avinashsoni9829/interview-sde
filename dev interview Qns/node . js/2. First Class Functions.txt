@@ -1,0 +1,4 @@
+function as a variable 
+this helps to pass the function 
+or 
+return other function 

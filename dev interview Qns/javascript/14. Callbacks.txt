@@ -1,0 +1,1 @@
+Functions that are used as an argument to another function are called callback functions.

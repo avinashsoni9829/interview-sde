@@ -1,0 +1,15 @@
+Using the rest parameter syntax, we can create functions that can take
+a variable number of arguments.
+
+function extractingArgs(...args){
+  return args[1];
+}
+- Rest parameter should 
+always be used at the last 
+parameter of a function:
+
+- Although the syntax of spread operator is exactly the 
+  same as the rest parameter, spread operator is used 
+  to spread an array, and object literals.
+  We also use spread operators where one or 
+  more arguments are expected in a function call.

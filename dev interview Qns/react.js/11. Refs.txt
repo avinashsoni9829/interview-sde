@@ -1,0 +1,6 @@
+UseRef Hook : 
+
+used for : 
+1)  Managing Focus , Media Play 
+2)  Triggering Animations 
+3)   DOM intergration with 3rdParty 

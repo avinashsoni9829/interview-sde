@@ -1,0 +1,4 @@
+used for perfoming side effects 
+has two arguments 
+
+UseEffect(callback , [dependencies]);

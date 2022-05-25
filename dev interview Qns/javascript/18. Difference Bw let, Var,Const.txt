@@ -1,0 +1,18 @@
+                 const       let          var 
+
+   Global Scope :  no          no          yes 
+
+ function Scope :  yes         yes         yes 
+ 
+   block Scope  :  yes         yes         no   
+   
+   reassigned   :  no          yes         yes 
+
+- The variables declared with the let keyword in the global scope behave 
+just like the variable declared with the var keyword in the global scope.
+
+- Variables that are declared with the var keyword in the global scope
+  are added to the window/global object. 
+  Therefore, they can be accessed using window.variableName.
+- Whereas, the variables declared with the let keyword are not added to the global object,
+  therefore, trying to access such variables using window.variableName results in an error

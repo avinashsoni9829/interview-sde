@@ -1,0 +1,7 @@
+reasons : 
+1. Change in Props or state 
+2. Unupdated Components 
+
+to prevent re-rendering of child components
+use shouldComponentUpdate();
+

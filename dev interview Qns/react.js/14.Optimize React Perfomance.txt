@@ -1,0 +1,4 @@
+-> useMemo() : caching CPU - Expensive functions
+-> State Colocation : moving the state as
+close to where you need it as possible
+-> LazyLoading 

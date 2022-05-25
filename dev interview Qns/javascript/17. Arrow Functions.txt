@@ -1,0 +1,9 @@
+In the arrow functions, 
+there is no binding of the this 
+keyword.
+The this keyword inside an arrow 
+function, does not refer to the 
+object calling it. It rather 
+inherits its value from the parent 
+scope which 
+is the window object in this case.

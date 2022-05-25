@@ -15,7 +15,7 @@ find the point where cycle begins
    
    class Solution {
    public:
-    ListNode *detectCycle(ListNode *head) {
+    ListNode * detectCycle(ListNode *head) {
         
 		if(head==NULL or head->next==NULL) return NULL;
         

@@ -119,7 +119,7 @@ int a[100][100];
        	   int x_coordinate = mid / m;
        	   int y_coordinate = mid % m;
        	   
-       	   if( a[i][ y_coordinate] == val )
+       	   if( a[x_coordinate][ y_coordinate] == val )
        	   {
        	       	found = true;
 			    

@@ -1,0 +1,14 @@
+virtual machine 
+uses js as scripting language 
+runs on chrome v8 engine
+create server - side web applications
+based on event-driven architecture
+
+advantages : 
+-short response time due to event-based
+architecture 
+- concurrent proccessing 
+- runs on v8 engine ( good performance) 
+- backend - frontend both js 
+- good libarary support 
+- asynchronous support

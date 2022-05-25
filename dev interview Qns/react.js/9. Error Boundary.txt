@@ -1,0 +1,7 @@
+allow to catch error 
+
+can detect error : 
+1) Render Phase 
+2) Inside LifeCycle Method 
+3) Inside the Constructor 
+

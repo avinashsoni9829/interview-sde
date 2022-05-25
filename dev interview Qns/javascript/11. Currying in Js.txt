@@ -1,0 +1,13 @@
+function of arguments n -> n functions with one or less arguments
+f(a,b) = f(a)(b)
+
+
+ex : 
+function add(a){
+ return function(b){
+   return a + b;
+ }
+}
+
+add(3)(4);
+

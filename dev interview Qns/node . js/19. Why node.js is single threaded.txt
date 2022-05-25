@@ -1,0 +1,2 @@
+single threaded for async processing 
+async processing helps in getting more processing and scalablity 

@@ -1,0 +1,12 @@
+dom manipulation is slow 
+entire dom is updated for small change
+
+to solve this virtual dom is used 
+main diff b/w real dom and virtual dom
+object is any changes in virtual dom
+will not reflect on the screen
+directly 
+
+react use two virtual dom to render ui
+1) to store the current state 
+2) to store the previous state 

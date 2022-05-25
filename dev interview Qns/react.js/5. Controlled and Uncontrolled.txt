@@ -1,0 +1,8 @@
+approch to handle input from elements
+
+
+controlled : value of input is under
+react controll
+uncontrolled : value of input is under
+DOM controll
+ref is used 

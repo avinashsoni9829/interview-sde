@@ -1,0 +1,44 @@
+due to async nature 
+it uses event-loop to maintain concurrency and 
+perform non - blocking I/O operations 
+
+
+as node.js start -> init event loop 
+event loop -> queue( evenet - queue)
+
+
+
+ex : 
+================================================
+function f(){
+
+  console.log(" statement 1 ");
+  
+  setTimeOut( function(){
+
+       console.log("statement 2 ");
+  },2000);
+
+  console.log("statement 3");
+}
+
+console.log("statement 4");
+f();
+
+==================================================
+- explanation : 
+ 
+  statement -4 -> push to stack  -> get executed -> poped 
+  f() -> pushed to stack 
+  
+  statement - 1 -> push to stack -> get executed -> poped 
+  
+  statement - 2 ->push to stack  
+ 
+  statement -3 -> push to stack -> get executed -> poped 
+
+  statement - 2 after -2 second -> get pushed  to event queue again 
+   now stack is empty  so  this operations completes and poped out 
+
+
+ 

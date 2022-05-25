@@ -1,0 +1,2 @@
+input to components of react 
+parent to child data pass 

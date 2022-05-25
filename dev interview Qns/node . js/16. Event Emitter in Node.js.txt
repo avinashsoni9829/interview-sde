@@ -1,0 +1,2 @@
+node.js class having objects that are capable of emitting
+events 

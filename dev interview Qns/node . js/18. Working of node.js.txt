@@ -1,0 +1,11 @@
+
+client sends req to server 
+node.js recieve req and add to event - queue 
+req are then passed one - by - one using the event - loop 
+event loop process simple req such as I/O and give response 
+
+for every single req a single thread from thread pool is assigned .
+this thread is responsible for getting req resources 
+
+once the task is done then res -> event-loop -> client 
+

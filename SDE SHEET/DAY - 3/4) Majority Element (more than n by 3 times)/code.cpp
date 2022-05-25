@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-/* Majority Element  (  >  N/3 ) elements   */
+/* 
+  Majority Element  (  >  N/3 ) elements   */
 
 /*
 

@@ -1,0 +1,4 @@
+- js is a dynamically typed language.
+- variable type is checked during 
+run - time 
+
